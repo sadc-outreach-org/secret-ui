@@ -2,7 +2,7 @@
 
 ## Dev environment setup
 0) navigate in your terminal to the directory that will hold the project directory
-1)run the following command in a terminal to clone this repository: `git clone https://github.com/sadc-outreach-org/secret-ui.git'
+1)run the following command in a terminal to clone this repository: `git clone https://github.com/sadc-outreach-org/secret-ui.git`
 2) `cd secret-ui` to change directory into repository
 3) install Node Package Manager (npm) and Node JS from [the NodeJS website](https://nodejs.org/en/)
 4) in the terminal, install the VueJS command line interface with the following command: `npm install -g @vue/cli` (the -g flag ensures that Vue is installed globally instead of just locally)
@@ -14,5 +14,5 @@
 
 
 
-### Customize configuration
+### Vue Cli Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
