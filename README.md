@@ -10,7 +10,7 @@
 6) run `npm run serve` to compile project and serve locally.
 7) localhost website address will be displayed in terminal window. website will run and hot-reload code changes as long as `npm run serve` is running. use `ctrl+c` to shutdown server.
 8) run `npm run build` to compile and minify the project for web deployment. resulting files are in **/dist**.
-9) run `npm run lint` to lint the project and find syntax errors. run `npm run lint --fix` to automatically fix issues. ESLint configuration file is located in the `packages.json` file
+9) run `npm run lint` to lint the project and find syntax errors. run `npm run lint --fix` to automatically fix issues. ESLint configuration file is located in the `.eslintrc.js` file
 
 ## Vue project settings
 ![alt text](https://i.imgur.com/PZO4n1t.png "cli setup")
