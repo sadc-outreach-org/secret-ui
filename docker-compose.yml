@@ -1,0 +1,29 @@
+# initial docker-compose file. comments added from docker docs
+
+version: "3"
+services:
+  web:
+    # replace username/repo:tag with your name and image details
+    image: tylergreene/secret-ui-docker:latest
+    deploy:
+      # run 5 instances of this image as a service called "web"
+      replicas: 5
+      resources:
+        limits:
+          # limits each instance to use at most 10% of a single core of CPU time
+          cpus: "0.1"
+          # limits each instance to use at most 50MB of RAM
+          memory: 50M
+      restart_policy:
+        # immediately restarts containers if one fails
+        condition: on-failure
+    ports:
+      # maps port 8080 on the host to 'web's port 80
+      - "8080:80"
+    networks:
+      # instruct 'web's containers to share port 80 via load balanced network called webnet
+      - webnet
+networks:
+  # define the webnet network with default settings
+  webnet:
+
